@@ -2,8 +2,8 @@ import React, { useCallback, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Bars3Icon, BugAntIcon, MagnifyingGlassIcon, SparklesIcon } from "@heroicons/react/24/outline";
-import { FaucetButton, RainbowKitCustomConnectButton } from "~~/components/scaffold-eth";
+import { Bars3Icon, MagnifyingGlassIcon, SparklesIcon } from "@heroicons/react/24/outline";
+// import { FaucetButton, RainbowKitCustomConnectButton } from "~~/components/scaffold-eth";
 import { useOutsideClick } from "~~/hooks/scaffold-eth";
 
 const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
@@ -39,12 +39,12 @@ export const Header = () => {
       <li>
         <NavLink href="/">Home</NavLink>
       </li>
-      <li>
+      {/* <li>
         <NavLink href="/debug">
           <BugAntIcon className="h-4 w-4" />
           Debug Contracts
         </NavLink>
-      </li>
+      </li> */}
       <li>
         <NavLink href="/example-ui">
           <SparklesIcon className="h-4 w-4" />
@@ -96,10 +96,10 @@ export const Header = () => {
         </Link>
         <ul className="hidden lg:flex lg:flex-nowrap menu menu-horizontal px-1 gap-2">{navLinks}</ul>
       </div>
-      <div className="navbar-end flex-grow mr-4">
+      {/* <div className="navbar-end flex-grow mr-4">
         <RainbowKitCustomConnectButton />
         <FaucetButton />
-      </div>
+      </div> */}
     </div>
   );
 };

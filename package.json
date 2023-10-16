@@ -36,5 +36,9 @@
   },
   "resolutions": {
     "usehooks-ts@^2.7.2": "patch:usehooks-ts@npm:^2.7.2#./.yarn/patches/usehooks-ts-npm-2.7.2-fceffe0e43.patch"
+  },
+  "dependencies": {
+    "@covalenthq/client-sdk": "^0.4.2",
+    "vercel": "latest"
   }
 }
